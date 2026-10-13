@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f5f3ef;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --muted: #e5e7eb;
+  --primary: #0d1b4d;
+  --secondary: #d9222a;
+  --accent: #0c2d7d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-shell {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.brand-heading {
+  letter-spacing: -0.06em;
+}
+
+.property-card-shadow {
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
